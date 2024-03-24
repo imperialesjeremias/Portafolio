@@ -19,9 +19,11 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  background-color: #1a1a1a;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
@@ -29,10 +31,10 @@ h1 {
 
 #app {
   max-width: 1280px;
-  height: 100vh;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: #1a1a1a;
 }
 
 .card {
@@ -42,7 +44,7 @@ h1 {
 
 .effect {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid rgb(34, 34, 34);
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
@@ -51,6 +53,7 @@ h1 {
   cursor: pointer;
   transition: border-color 0.25s;
   text-decoration: none;
+
 }
 
 .effect:hover {
@@ -95,6 +98,7 @@ nav {
   display: flex;
   gap: 3rem;
   justify-content: center;
+  color: #fff;
 }
 
 .card-nav {
@@ -121,6 +125,7 @@ nav {
   margin-bottom: 5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
+  color: rgb(255, 255, 255);
 }
 
 .typewriter {
@@ -134,7 +139,7 @@ nav {
 
 .typewriter2 {
   margin-top: 10px;
-  color: rgb(81, 155, 197);
+  color: rgb(81, 127, 197);
   overflow: hidden;
   border-right: .15em solid rgb(255, 255, 255);
   white-space: nowrap;
@@ -180,7 +185,7 @@ nav {
   border: 1px solid transparent;
   border-radius: 50%;
   color: white;
-  margin-top: -1rem;
+  margin-top: 1.3rem;
   width: 3em;
   height: 3em;
   -webkit-animation: text-pop-up-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -231,10 +236,12 @@ nav {
   }
 }
 
+.subtitle_project {
+  color: #fff;
+}
+
 #project-1 {
   margin-top: 3rem;
-  position: sticky;
-  top: 0;
 }
 
 .desc_title {

@@ -27,6 +27,7 @@ if(document.getElementById('curriculum')) {
 function showProjects() {
   document.getElementById('project-1').style.display = 'block';
   document.getElementById('arrow').style.display = 'none';
+  window.scrollTo(0,document.body.scrollHeight);
 }
 
 if(document.getElementById('arrow')) {
@@ -36,6 +37,7 @@ if(document.getElementById('arrow')) {
 function hideProjects() {
   document.getElementById('project-1').style.display = 'none';
   document.getElementById('arrow').style.display = '';
+  window.scrollTo(0,0);
 }
 
 if(document.getElementById('arrow-up')) {
